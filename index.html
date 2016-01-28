@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Insira o n&uacute;mero de p&aacute;ginas</title>
+		<style type="text/css">
+
+			a {
+				cursor: pointer;
+			}
+
+			.spread {
+				width: 80%;
+				height: 200px;
+				margin: 0 auto;
+				display: block;
+				border: 1px solid #444;
+				overflow: hidden;
+			}
+
+			.spread + .spread {
+				margin-top: 24px;
+			}
+
+			.spread .page {
+				text-align: center;
+				height: 200px;
+				line-height: 200px;
+				float:left;
+				width: 50%;
+			}
+
+			.spread .page + .page {
+				border-left: 1px solid #444;
+				margin-left: -1px;
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		<form id="form">
+			<label id="info">
+			</label>
+			<input type="text" id="pages" />
+			<a class="link" id="submit">montar</a>
+		</form>
+		<div id="results">
+
+		</div>
+	</body>
+	<script src="app.js"></script>
+</html>
